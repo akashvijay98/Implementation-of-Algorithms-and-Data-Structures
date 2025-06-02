@@ -5,7 +5,7 @@ Consistent hashing - domino effect
 
 2 phase commit 
 
-Types of load balancer
+Types of load balancer (L4,L7)
 
 
  System Design Template : Example ad click aggregator
@@ -280,8 +280,8 @@ pods based on cpu threshold
 
 Load Balancers : 
 
-Layer 4 - TCP - Like a proxy, almost a direct conn to server - imagine an lb for scaled db
-Layer 7 - HTTP - app load balancer - Imagine customer facing where routing is required
+Layer 4 - TCP - Like a proxy, almost a direct conn to server - imagine an lb for scaled db (used for sockets)
+Layer 7 - HTTP - app load balancer - Imagine customer facing where routing is required (used for Http/Https requests)
 
 Dedicated - app load balancer, 1M requests per sec - Round robin or least connections( for web sockets least conn is optimal)
 
